@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <header>
+        <h1>My To-Do List</h1>
+    </header>
+    <form onsubmit="addTodo">
+        <div class="input">
+            <input type="text" class="todo-input">
+            <button class="color-button" type="button">
+                <i class="fas fa-fill"></i>
+            </button>
+            <button class="todo-button" type="submit">
+                <i class="fas fa-plus-square"></i>
+            </button>
+            <div class="invisible color-selector">
+                <div class="colors" id="c1"><i class="fas c-1 fa-circle"></i></div>
+                <div class="colors" id="c2"><i class="fas c-2 fa-circle"></i></div>
+                <div class="colors" id="c3"><i class="fas c-3 fa-circle"></i></div>
+                <div class="colors" id="c4"><i class="fas c-4 fa-circle"></i></div>
+                <div class="colors" id="c5"><i class="fas c-5 fa-circle"></i></div>
+                <div class="colors" id="c6"><i class="fas c-6 fa-circle"></i></div>
+            </div>
+        </div>
+    </form>
+    <div class="todo-container">
+        <div class="containers container-1">
+            <h2>To-Do</h2>
+            <ul class="todo-list-c1">
+            </ul>
+        </div>
+        <div class="containers container-2">
+            <h2>In Progress</h2>
+            <ul class="todo-list-c2">
+            </ul>
+        </div>
+        <div class="containers container-3">
+            <h2>Completed</h2>
+            <ul class="todo-list-c3">
+            </ul>
+        </div>
+        <div class="containers remove-container">
+            <i class="fas fa-trash"></i>
+            <h3 class="trash">Delete</h3>
+        </div>
+    </div>
+    
+    <script src="./app.js"></script>    
+</body>
+</html>

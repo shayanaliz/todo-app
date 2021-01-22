@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  color: whitesmoke;
+  background-color: #17141d;
+  font-family: "Crete Round", serif;
+}
+
+header {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #17141d;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 10px;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form input {
+  width: 25rem;
+}
+
+form input:focus {
+  outline: none;
+}
+
+.todo-button:focus {
+  outline: none;
+}
+
+.input {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: whitesmoke;
+  border: none;
+  height: 4rem;
+  width: 50vw;
+  border-radius: 30px;
+}
+
+.todo-input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: none;
+  margin-left: 10px;
+}
+
+form input,
+form button {
+  height: 4rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+}
+
+.todo-button {
+  margin-right: 10px;
+}
+
+form button {
+  color: #415d80;
+  background: whitesmoke;
+  height: 35px;
+  width: 35px;
+  margin-left: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  position: relative;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+form button:hover {
+  background: #415d80;
+  color: whitesmoke;
+}
+
+form button:focus {
+  outline: none;
+}
+
+.todo-button::after {
+  content: "Submit To-Do Task";
+  padding: 10px;
+  padding-bottom: -5px;
+  background-color: black;
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 0.4rem;
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 7rem;
+  height: 1rem;
+  opacity: 0;
+  -webkit-transition: 200ms ease;
+  transition: 200ms ease;
+}
+
+.todo-button:hover::after {
+  opacity: 1;
+}
+
+.color-button::after {
+  content: "Change color of task";
+  padding: 10px;
+  padding-bottom: -5px;
+  background-color: black;
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 0.4rem;
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 8rem;
+  height: 1rem;
+  opacity: 0;
+  -webkit-transition: 200ms ease;
+  transition: 200ms ease;
+}
+
+.color-button:hover::after {
+  opacity: 1;
+}
+
+.todo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-1,
+.container-2,
+.container-3 {
+  width: 28vw;
+  height: 21rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  position: relative;
+  display: inline-table;
+}
+
+.container-1 {
+  background-color: crimson;
+}
+
+.container-2 {
+  background-color: #e0a73e;
+}
+
+.container-3 {
+  background-color: #1fad91;
+}
+
+.todo-list-c1,
+.todo-list-c2,
+.todo-list-c3 {
+  min-width: 10%;
+  list-style: none;
+}
+
+.todo {
+  position: relative;
+  margin: 1rem;
+  padding: 1rem 0.5rem;
+  height: 60px;
+  -webkit-box-shadow: 0rem -0.2rem 1rem #000;
+          box-shadow: 0rem -0.2rem 1rem #000;
+  color: black;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 92%;
+  height: 0%;
+  display: inline-table;
+  cursor: move;
+  -webkit-transition: 200ms ease;
+  transition: 200ms ease;
+}
+
+.todo:first-child {
+  margin-top: 60px;
+}
+
+.todo:not(:first-child) {
+  margin-top: -35px;
+}
+
+.todo:hover {
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+}
+
+.todo:hover ~ .todo {
+  -webkit-transform: translateY(18px);
+          transform: translateY(18px);
+}
+
+.todo li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.color-selector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 13rem;
+  height: 2.5rem;
+  background-color: rgba(100, 10, 112, 0.8);
+  border-radius: 50px;
+  position: absolute;
+  top: -2.5rem;
+  left: 30.25rem;
+  -webkit-box-shadow: -1rem 0.5rem 1rem #000;
+          box-shadow: -1rem 0.5rem 1rem #000;
+}
+
+.color-selector::after {
+  content: " ";
+  position: absolute;
+  right: 65px;
+  bottom: -15px;
+  border-top: 15px solid rgba(100, 10, 112, 0.8);
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-bottom: none;
+}
+
+.invisible {
+  display: none;
+}
+
+#c1,
+#c2,
+#c3,
+#c4,
+#c5,
+#c6 {
+  cursor: pointer;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.05rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+#c1:hover,
+#c2:hover,
+#c3:hover,
+#c4:hover,
+#c5:hover,
+#c6:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.c-1,
+.c-2,
+.c-3,
+.c-4,
+.c-5,
+.c-6 {
+  font-size: 1.1rem;
+  pointer-events: none;
+  border-radius: 50%;
+  height: auto;
+  width: auto;
+}
+
+.c-1 {
+  color: #f1faee;
+}
+
+.c-2 {
+  color: #17141d;
+}
+
+.c-3 {
+  color: #6153cc;
+}
+
+.c-4 {
+  color: #e40066;
+}
+
+.c-5 {
+  color: #fe7f2d;
+}
+
+.c-6 {
+  color: #a9fdac;
+}
+
+.drag-hover {
+  opacity: 0.6;
+  outline: 2px dashed black;
+}
+
+.remove-container {
+  position: absolute;
+  top: 150px;
+  right: 80px;
+  width: 6rem;
+  height: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: crimson;
+  border-radius: 50%;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  opacity: 0.2;
+}
+
+.remove-container:hover {
+  opacity: 0.3;
+}
+
+.remove-container::after {
+  content: "Drag tasks here to remove.";
+  padding: 10px;
+  padding-bottom: -5px;
+  background-color: black;
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 0.4rem;
+  position: absolute;
+  top: -50px;
+  width: 6.5rem;
+  height: 2rem;
+  opacity: 0;
+  -webkit-transition: 200ms ease;
+  transition: 200ms ease;
+}
+
+.remove-container:hover::after {
+  opacity: 1;
+}
+
+.trash {
+  color: white;
+  margin: 3px;
+  font-size: 1.1rem;
+  pointer-events: none;
+}
+
+.fa-trash {
+  margin: 3px;
+  font-size: 1.5rem;
+  pointer-events: none;
+}
+
+.remove-hover {
+  opacity: 1;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+/*# sourceMappingURL=style.css.map */
