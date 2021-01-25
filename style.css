@@ -273,17 +273,6 @@ form button:focus {
           box-shadow: -1rem 0.5rem 1rem #000;
 }
 
-.color-selector::after {
-  content: " ";
-  position: absolute;
-  right: 65px;
-  bottom: -15px;
-  border-top: 15px solid rgba(100, 10, 112, 0.8);
-  border-right: 15px solid transparent;
-  border-left: 15px solid transparent;
-  border-bottom: none;
-}
-
 .invisible {
   display: none;
 }
