@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -15,7 +15,13 @@ body {
 }
 
 header {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-size: 1rem;
 }
 
 h2 {
@@ -24,7 +30,7 @@ h2 {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   top: 10px;
 }
 
@@ -35,11 +41,11 @@ form {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 form input {
@@ -60,11 +66,11 @@ form input:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background: whitesmoke;
   border: none;
   height: 4rem;
@@ -74,8 +80,8 @@ form input:focus {
 
 .todo-input {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   background: none;
   margin-left: 10px;
 }
@@ -165,8 +171,8 @@ form button:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .container-1,
@@ -205,7 +211,7 @@ form button:focus {
   padding: 1rem 0.5rem;
   height: 60px;
   -webkit-box-shadow: 0rem -0.2rem 1rem #000;
-          box-shadow: 0rem -0.2rem 1rem #000;
+  box-shadow: 0rem -0.2rem 1rem #000;
   color: black;
   font-size: 1.2rem;
   display: -webkit-box;
@@ -213,11 +219,11 @@ form button:focus {
   display: flex;
   border-radius: 15px;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   min-width: 92%;
   height: 0%;
   display: inline-table;
@@ -236,18 +242,18 @@ form button:focus {
 
 .todo:hover {
   -webkit-transform: translateX(-20px);
-          transform: translateX(-20px);
+  transform: translateX(-20px);
 }
 
 .todo:hover ~ .todo {
   -webkit-transform: translateY(18px);
-          transform: translateY(18px);
+  transform: translateY(18px);
 }
 
 .todo li {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   margin-left: 10px;
   display: inline-block;
 }
@@ -257,11 +263,11 @@ form button:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 13rem;
   height: 2.5rem;
   background-color: rgba(100, 10, 112, 0.8);
@@ -270,7 +276,7 @@ form button:focus {
   top: -2.5rem;
   left: 30.25rem;
   -webkit-box-shadow: -1rem 0.5rem 1rem #000;
-          box-shadow: -1rem 0.5rem 1rem #000;
+  box-shadow: -1rem 0.5rem 1rem #000;
 }
 
 .invisible {
@@ -289,11 +295,11 @@ form button:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 0.05rem;
   width: 2rem;
   height: 2rem;
@@ -361,14 +367,14 @@ form button:focus {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: crimson;
   border-radius: 50%;
   -webkit-transition: all 500ms ease;
